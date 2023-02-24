@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="counter.css" rel="stylesheet">
+    <link rel="icon" href="../img/fav.png">
+    <script src="../jquery-3.6.3.min.js"></script>
+    <title>Talisman - Duel</title>
+</head>
+<body>
+<a href="../" id="backarr">
+    <img src="../img/back.png" height="36" alt="Back"/>
+</a>
+<div class="center">
+    <img src="../img/vsl.png" height="128" alt="Versus"/>
+    <h1>Préparons ce duel...</h1>
+    <form action="" method="get" class="form-example">
+        <div class="names">
+            <label for="name1">Noms des joueurs</label>
+            <div>
+                <input type="text" name="name1" id="name1" placeholder="Joueur 1">
+                <input type="text" name="name2" id="name2" placeholder="Joueur 2">
+            </div>
+        </div>
+        <div class="lp">
+            <label for="lps">Life Points (LP)</label>
+            <div>
+                <a href="#" id="less"><img src="../img/less.png" height="20" width="20" alt="-"></a>
+                <input id="lps" type="number" value="8000" min="100" max="10000" step="100" required/>
+                <a href="#" id="moar"><img src="../img/moar.png" height="20" width="20" alt="+"></a>
+            </div>
+            <script src="spinbutton.js"></script>
+        </div>
+        <div class="timerd">
+                <input type="radio" id="chrono" name="count" value="chrono" checked required>
+                <label for="chrono">Chrono°</label>
+                <input type="radio" id="timer" name="count" value="timer">
+                <label for="timer">Timer</label>
+                <input type="radio" id="chess" name="count" value="chess">
+                <label for="chess">Nexus</label>
+            <div id="timerp">
+                <label for="timerv">Temps (HH:MM:SS)</label>
+                <div>
+                    <input type="time" min="00:01:00" max="59:59:59" value="00:30:00" id="timerv">
+                </div>
+            </div>
+            <div id="nexusp">
+                <label for="nexussv">Secondes & Bonus de temps</label>
+                <div>
+                    <input type="number" min="100" max="9999" value="170" id="nexussv" placeholder="Secondes">
+                    <input type="number" min="1" max="9999" value="10" id="nexuspv" placeholder="Bonus de temps">
+                </div>
+            </div>
+            <script src="parameters.js"></script>
+        </div>
+        <input type="submit" value="Lancer le duel">
+    </form>
+</div>
+<div class="footer">
+    <p>Code source sur </p>
+    <a href="#">
+        <img src="../img/git.png" alt="GitHub" height="20em"/>
+        <p>GitHub</p>
+    </a>
+</div>
+</body>
+</html>

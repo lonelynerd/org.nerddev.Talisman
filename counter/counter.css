@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    background: #282d64;
+    text-align: center;
+}
+
+h1 {
+    font-family: Montserrat ExtraBold, sans-serif;
+}
+
+h2 {
+    font-family: Montserrat Medium, sans-serif;
+}
+
+input[type=text], input[type=number], input[type=time] {
+    color: white;
+    text-align: center;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    background: none;
+    border: solid 3px white;
+    border-radius: 999px;
+    padding: 5px;
+}
+
+.names>div>input[type=text]:first-child{
+    border-radius: 999px 0 0 999px;
+}
+
+.names>div>input[type=text]:last-child{
+    border-radius: 0 999px 999px 0;
+}
+
+.names>div>*{
+    display: inline-block;
+    width: 30%;
+}
+
+#lps {
+    width: 55%;
+}
+
+.center {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center>*{
+    margin: 10px;
+}
+
+.center>form>*{
+    margin: 20px;
+}
+
+.lp>input{
+    width: 80%;
+}
+
+.lp>div>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#timerd>*{
+    display: inline-block;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    opacity: 50%;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.footer * {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer a p {
+    font-weight: bolder;
+}
+
+.footer a:hover {
+    opacity: 150%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+#backarr {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+form>input{
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    background: none;
+    border: solid 2px white;
+    border-radius: 999px;
+}
+
+#timerp, #nexusp {
+    display: none;
+    margin: 10px;
+}
+
+#nexussv{
+    border-radius: 999px 0 0 999px;
+}
+
+#timerv{
+    text-align: center;
+    width: 60%;
+}
+
+#nexuspv{
+    border-radius: 0 999px 999px 0;
+}
+
+#nexusp>div>*{
+    width: 30%;
+}

@@ -1,0 +1,17 @@
+<body onload="timer()">
+    <script>
+    function timer(){
+        var sec = 30;
+        var timer = setInterval(function(){
+            document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
+            sec--;
+            if (sec < 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
+</script>
+<div>
+    <div id="safeTimer">
+        <h2>Safe Timer</h2>
+        <p id="safeTimerDisplay">00:30</p>
