@@ -1,9 +1,11 @@
+<!-- TODO : add night mode, make app translatable, add dark mode, make README and .gitignore, make app for phone-->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link href="counter.css" rel="stylesheet">
-    <link rel="icon" href="../img/fav.png">
+    <link rel="icon" href="../img/talisman.png">
     <script src="../jquery-3.6.3.min.js"></script>
     <title>Talisman - Duel</title>
 </head>
@@ -12,9 +14,9 @@
     <img src="../img/back.png" height="36" alt="Back"/>
 </a>
 <div class="center">
-    <img src="../img/vsl.png" height="128" alt="Versus"/>
+    <img src="../img/duel-color.png" height="128" alt="Versus"/>
     <h1>Préparons ce duel...</h1>
-    <form action="" method="get" class="form-example">
+    <form method="post" onsubmit="return itsTimeToDuel()" class="form-example">
         <div class="names">
             <label for="name1">Noms des joueurs</label>
             <div>
@@ -32,12 +34,14 @@
             <script src="spinbutton.js"></script>
         </div>
         <div class="timerd">
+            <div>
                 <input type="radio" id="chrono" name="count" value="chrono" checked required>
                 <label for="chrono">Chrono°</label>
                 <input type="radio" id="timer" name="count" value="timer">
                 <label for="timer">Timer</label>
                 <input type="radio" id="chess" name="count" value="chess">
                 <label for="chess">Nexus</label>
+            </div>
             <div id="timerp">
                 <label for="timerv">Temps (HH:MM:SS)</label>
                 <div>
@@ -55,10 +59,11 @@
         </div>
         <input type="submit" value="Lancer le duel">
     </form>
+    <script src="formmgmt.js"></script>
 </div>
 <div class="footer">
     <p>Code source sur </p>
-    <a href="#">
+    <a href="https://github.com/lonelynerd/org.nerddev.Talisman">
         <img src="../img/git.png" alt="GitHub" height="20em"/>
         <p>GitHub</p>
     </a>

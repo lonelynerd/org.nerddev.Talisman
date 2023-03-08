@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat,sans-serif;
+    color: white;
+    background: #171a3f;
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center>div{
+    margin: 30px;
+}
+
+.upper>div, .lower>div{
+    margin: 30px;
+}
+
+h1 {
+    font-family: Montserrat ExtraBold, sans-serif;
+    font-size:8em;
+    margin: 0;
+}
+
+.buttons>*{
+    display: inline-block;
+}
+
+.buttons>div>*:active{
+    opacity: 50%;
+}
+
+h2 {
+    font-family: Montserrat Medium, sans-serif;
+    margin: 0;
+}
+
+.lower{
+    display: flex;
+}
+
+.lower>div{
+    flex: 1 auto;
+}
+
+.notes{
+    width: 50%;
+}
+
+.tools{
+    width: 10%;
+}
+
+.tools>*{
+    margin: 15px;
+}
+
+.notes>div{
+    width: 24%;
+    display: inline-block;
+}
+
+.notes>div>input{
+    color: white;
+    background: none;
+    border: none;
+    /*-webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;*/
+}
+
+.notes>div>input[type=text]{
+    height: 30px;
+}
+
+.notes>div>input[type=number]{
+    height: 69px;
+}
+
+#dicei:active, #coini:active{
+    opacity: 50%;
+}
+
+#dicev, #coinv{
+    margin: 0;
+}
+
+.timer{
+    width: 15%;
+}
+
+.upper>*, .lower>*{
+    display: inline-block;
+}
+
+.upper>div, .lower>div{
+    background: #313c77;
+    box-shadow: #0e142c 0 10px 0px;
+    border-radius: 30px;
+}
+
+#player1, #player2{
+    width: 30%;
+}
+
+.tools>*{
+    display: inline-block;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: black;
+    opacity: 50%;
+    width: 100%;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.footer * {
+    display: inline-block;
+}
+
+.footer a p {
+    font-weight: bolder;
+}
+
+.footer a:hover {
+    opacity: 150%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+

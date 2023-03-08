@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="fight.css" rel="stylesheet">
+    <link rel="icon" href="../../img/talisman.png">
+    <script src="../../jquery-3.6.3.min.js"></script>
+    <title>Talisman - Combat</title>
+</head>
+
+<body>
+<div class="center">
+    <div class="upper">
+        <div id="player1">
+            <h2>Player 1</h2>
+            <h1>8000</h1>
+            <label for="nexus1">Timer</label>
+            <p id="nexus1">00</p>
+        </div>
+        <div class="timer">
+            <label for="counter">Timer</label>
+            <p id="counter">00:00:00</p>
+            <div class="buttons">
+                <div>
+                    <a href="#" id="reset">
+                        <img src="../../img/reset.png" height="36" alt="reset">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" id="pause">
+                        <img src="../../img/pause.png" height="36" alt="pause">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" id="switch">
+                        <img src="../../img/switch.png" height="36" alt="switch">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" id="plus">
+                        <img src="../../img/plus.png" height="36" alt="plus">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="player2">
+            <h2>Player 2</h2>
+            <h1>8000</h1>
+            <label for="nexus2">Timer</label>
+            <p id="nexus2">00</p>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="notes">
+            <div>
+                <input type="text" placeholder="Compteur 1"/>
+                <input type="number" value="0"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Compteur 2"/>
+                <input type="number" value="0"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Compteur 3"/>
+                <input type="number" value="0"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Compteur 4"/>
+                <input type="number" value="0"/>
+            </div>
+        </div>
+        <div class="tools">
+            <div id="dice">
+                <a href="#">
+                    <img id="dicei" src="../../img/dice.png" width="64"/>
+                    <p id="dicev">Dice</p>
+                </a>
+            </div>
+            <div id="coin">
+                <a href="#">
+                    <img id="coini" src="../../img/coin.png" width="64"/>
+                    <p id="coinv">Coin</p>
+                </a>
+            </div>
+        </div>
+        <script src="tools.js"></script>
+    </div>
+</div>
+<div class="footer">
+    <p>Code source sur </p>
+    <a href="https://github.com/lonelynerd/org.nerddev.Talisman">
+        <img src="../../img/git.png" alt="GitHub" height="20em"/>
+        <p>GitHub</p>
+    </a>
+</div>
+</body>

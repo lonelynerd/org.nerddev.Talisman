@@ -21,27 +21,44 @@ input[type=text], input[type=number], input[type=time] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
-    background: none;
-    border: solid 3px white;
+    background: #454c8f;
+    box-shadow: #202341 0px 10px 0px;
     border-radius: 999px;
-    padding: 5px;
+    padding: 7px;
+    border: none;
+    transition: box-shadow 0.25s, background 0.25s;
 }
 
-.names>div>input[type=text]:first-child{
+input[type=text]:hover, input[type=number]:hover, input[type=time]:hover {
+    box-shadow: #202341 0px 0px 0px;
+    background: #4c54af;
+}
+
+.names > div > input[type=text]:first-child {
     border-radius: 999px 0 0 999px;
 }
 
-.names>div>input[type=text]:last-child{
+.names > div > input[type=text]:last-child {
     border-radius: 0 999px 999px 0;
 }
 
-.names>div>*{
+label {
+    opacity: 50%;
+    font-weight: lighter;
+}
+
+.timerd > label {
+    opacity: 100%;
+    font-weight: normal;
+}
+
+.names > div > * {
     display: inline-block;
     width: 30%;
 }
 
 #lps {
-    width: 55%;
+    width: 50%;
 }
 
 .center {
@@ -52,39 +69,45 @@ input[type=text], input[type=number], input[type=time] {
     transform: translate(-50%, -50%);
 }
 
-.center>*{
+.center > * {
     margin: 10px;
 }
 
-.center>form>*{
-    margin: 20px;
+.center > form > * {
+    margin: 30px;
 }
 
-.lp>input{
-    width: 80%;
+.center > form > input {
+    margin: 0px;
 }
 
-.lp>div>*{
+.timerd > * {
+    margin: 15px;
+}
+
+.lp > div > * {
     display: inline-block;
     vertical-align: middle;
+    margin: 5px;
 }
 
-#timerd>*{
+#timerd > * {
     display: inline-block;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
+    right: 20px;
     color: black;
     opacity: 50%;
     width: 100%;
     vertical-align: bottom;
+    text-align: right;
 }
 
 .footer * {
     display: inline-block;
-    text-align: center;
 }
 
 .footer a p {
@@ -111,33 +134,41 @@ a:visited {
     left: 50px;
 }
 
-form>input{
+form > input {
     color: white;
     font-weight: bolder;
-    padding: 10px;
-    background: none;
-    border: solid 2px white;
+    padding: 12px;
+    background: #454c8f;
+    box-shadow: #202341 0px 10px 0px;
+    border: none;
     border-radius: 999px;
+    transition: box-shadow 0.25s, background 0.25s;
 }
+
+form > input:hover {
+    box-shadow: #202341 0px 0px 0px;
+    background: #4c54af;
+}
+
 
 #timerp, #nexusp {
     display: none;
     margin: 10px;
 }
 
-#nexussv{
+#nexussv {
     border-radius: 999px 0 0 999px;
 }
 
-#timerv{
+#timerv {
     text-align: center;
     width: 60%;
 }
 
-#nexuspv{
+#nexuspv {
     border-radius: 0 999px 999px 0;
 }
 
-#nexusp>div>*{
+#nexusp > div > * {
     width: 30%;
 }
